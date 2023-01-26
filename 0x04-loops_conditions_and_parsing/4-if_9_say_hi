@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#This script prints Best Schiil 9 times and Hi once
+
+index=0
+
+while [ $index -lt 10 ]
+do
+	if [ $index -eq 9 ]
+	then
+		echo "Hi"
+	fi
+	echo "Best School"
+	(( index++ ))
+done
