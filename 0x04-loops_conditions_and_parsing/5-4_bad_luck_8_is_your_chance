@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#Prints Best School except for 4th and 8th iter
+
+index=0
+
+while [ $index -lt 10 ]
+do
+	if [ $index -eq 3 ]
+	then
+		echo "bad luck"
+	elif [ $index -eq 7 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	(( index++ ))
+done
