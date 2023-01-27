@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Creates a named file
+# Displays a message indefinitely
+# Intercepts SIGTERM and SIGINT signals
+# Deletes the file when receiving SIGQUIT or SIGTERM
+
+echo "$$" > /var/run/myscript.pid
+
+delete_me() {
+	rm /var/run/myscript.pid
+	exit
+}
+
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+	trap 'echo "Y U no love me?!"' SIGINT
+	trap 'echo "I hate the kill command" && delete_me' SIGTERM
+	trap 'delete_me' SIGQUIT
+done
