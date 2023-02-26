@@ -1,0 +1,22 @@
+Image link: https://ibb.co/QNvKy0v
+
+Additional Elements
+====================
+The Load Balancer serves to divide traffic between the different servers in order 
+to reduce load on individual servers. This is also important when aiming for High 
+Availability incase one server fails.
+The load balancer implements the least connection algorithm to route traffic to the 
+server with the least amount of connections. The setup is active-aactive with both 
+server instances live. An active-passive setup would have one of the servers idle 
+waiting for failover.
+A primary-Replica database setup works such that writes to the primary database are
+replicated to all replica databases. Reads can be passed to replicas in order to 
+improve database performance.
+The Single Point of Failure is the singular load balancer. If it fails, then access
+to both servers is blocked.
+The security issues include the data travelling to and from the servers not being 
+encrypted. This leaves it vulnerable to interception. Lack of a firewall also means 
+that it is possible for DDOS attacks to overwhelm the servers as requests are 
+allowed from anywhere.
+No monitoring means that we would not be able to tell how our setup is performing and
+handling requests.
