@@ -1,0 +1,19 @@
+Image Link: https://ibb.co/Bt7ztcR
+
+Components:
+============
+The addition of firewalls helps to handle and block any unwanted traffic to our 
+servers to prevent the likelihood of a crash from too many requests.
+The purpose of an SSL certificate from a certificate manager is to provide encryption
+in transit for any data travelling over the internet. It would not be possible to 
+intercept the data and read it or modify it.
+Monitoring is important to provide information on how our infrastructure is
+performing as well as the health of all our components. It makes it possible
+to plan for scaling activities or handling failovers.
+The monitoring service is able to perform tests on your infrastructure by sending 
+requests, analyzing responses, monitoring response times and availlability.
+========
+Terminating SSL at the load balancer level still exposes therequests as they travel 
+to the servers.
+Only one db capable of accepting writes is an issue because there is no scaling when
+there are periods of high write traffic.
