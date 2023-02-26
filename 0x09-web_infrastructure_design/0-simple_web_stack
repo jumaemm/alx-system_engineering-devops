@@ -1,0 +1,23 @@
+Image link: https://ibb.co/7pZrGHT
+Components
+============
+A server is software or hardware that provides functionality to other components 
+called clients. They consist of a  number of types each serving different purposes.
+===
+A domain name serves to provide a human readable text base representation of an IP 
+address. This eases the process of accessing data over a network for users.
+The DNS record in ww.foobar.com is of the type A record.
+The web server is software that serves requests to clients using the HTTP protocol.
+The application server hosts applications or software to be accessed by a business 
+or organization.
+The role of a database is to store relational or non-relational data that can be 
+related and requires easy access, updates and deletion.
+Communication between a server and client through the internet is achieved through 
+the use of requests sent using the Hyper-Text Transfer Protocol.
+=======
+There are multiple single points of failure in this infrastructure: the database, 
+the web server, the app server.
+There would be significant downtime during maintenance as the main werver would be 
+down and inaccessible for he entire period.
+The infrastructure also cannot scale as only one set of servers handles any requests 
+incl. a single database
