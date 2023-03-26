@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Connect to my server using a private ssh key
+
+ssh -i ~/.ssh/school ubunut@18.210.10.94
