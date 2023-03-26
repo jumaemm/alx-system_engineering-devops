@@ -1,0 +1,5 @@
+# Modify SSh config file to refuse password auth and to use private key
+
+Host *
+	PasswordAuthentication no
+	IdentifyFile ~/.ssh/school
